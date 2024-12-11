@@ -1,0 +1,38 @@
+﻿<Window x:Class="PR10.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PR10"
+        mc:Ignorable="d"
+        Title="Практическая работа №10" Height="350" Width="500">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <GroupBox Margin="5" Header="MasAdd">
+            <StackPanel>
+                <Label Content="Mas" Margin="5"/>
+                <TextBox x:Name="tbMasAdd" Margin="5" Text=""/>
+                <Button x:Name="btMasAdd" Content="MasAdd" Margin="5" Click="btMasAdd_Click"/>
+                <Button x:Name="btMasReplace" Content="MasReplace" Margin="5" Click="btMasReplace_Click"/>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Grid.Row="0" Grid.Column="1" Grid.RowSpan="2" Header="MasTable">
+            <StackPanel Grid.Row="0" Grid.Column="1">
+                <ListBox x:Name="lbMas" Height="305"/>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Grid.Row="1" Grid.Column="0" Margin="5">
+            <StackPanel>
+                <Button Content="Information" x:Name="btInfo" Margin="5" Click="btInfo_Click"/>
+                <Button Content="Exit" x:Name="btExit" Margin="5" Click="btExit_Click"/>
+            </StackPanel>
+        </GroupBox>
+    </Grid>
+</Window>
