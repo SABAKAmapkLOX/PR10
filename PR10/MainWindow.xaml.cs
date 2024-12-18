@@ -39,7 +39,7 @@ namespace PR10
             int index=0;
             for (int i = 0; i < mas.Count; i++)
             {
-                if (mas[i] > mas[lastNumber])
+                if (mas[i] > lastNumber)
                 {
                     lastNumber = mas[i];
                     index = i;
